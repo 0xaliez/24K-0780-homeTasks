@@ -24,7 +24,7 @@ bool findPath(int** arr, int x, int y, int n, int** solArr) {
         if (findPath(arr, x - 1, y, n, solArr))
             return true;
             
-        solArr[x][y] = 0;
+        solArr[x][y] = 0; // Answer (b)
     }
 
     return false;
@@ -68,4 +68,5 @@ int main() {
 
 
 }
+
 
